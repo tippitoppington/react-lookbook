@@ -1,5 +1,5 @@
 import React from 'react';
-import { outfits } from '../js/data';
+import { outfits } from '../js/outfits';
 
 const LooksImages = ({ changeOutfit }) => {
   return (
