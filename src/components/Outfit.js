@@ -1,5 +1,5 @@
 import React from 'react';
-import { outfits } from '../js/outfits';
+import { outfits } from '../data/outfits';
 import '../css/main.css';
 import '../css/outfits_features.css';
 

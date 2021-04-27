@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import ContempNav from './components/ContempNav';
 import Inspo from './Pages/Inspo';
 import Lookbook from './Pages/Lookbook';
-import './js/script.js';
 import Header from './components/Header';
+import './js/script.js';
 
 function App() {
   return (

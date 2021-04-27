@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 import '../css/main.css';
 import '../css/header-style.css';
 
 const ContempNav = () => {
   return (
     <>
-      <div className='contemp-nav-container '>
+      <div className='contemp-nav-container sticky'>
         <div className='contemp-nav m'>
           <div className='contemp-primary'>
             <button className='title'>Contemporary</button>
