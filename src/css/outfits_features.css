@@ -50,9 +50,11 @@ div.look {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* margin-top: 20px; */
+    /* border-top: 1px solid #ccc; */
     object-fit: cover;
     max-height: 50%;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(104, 104, 104, 0.55);
+    box-shadow: 0px 0px 2px 0px rgba(104, 104, 104, 0.55);
 }
 
 
@@ -62,7 +64,7 @@ div.look {
 
 .desc-container {
     width: 100%;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
 .look-description {
