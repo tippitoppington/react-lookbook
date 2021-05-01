@@ -1,7 +1,7 @@
 export const outfits = [
   {
     id: '01',
-    outfit_img: '/img/01/outfit_01f.png',
+    outfit_img: '/img/01/outfit_01f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
     items: {
@@ -187,7 +187,7 @@ export const outfits = [
   },
   {
     id: '02',
-    outfit_img: '/img/02/outfit_02f.png',
+    outfit_img: '/img/02/outfit_02f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
     items: {
@@ -373,7 +373,7 @@ export const outfits = [
   },
   {
     id: '03',
-    outfit_img: '/img/03/outfit_03f.png',
+    outfit_img: '/img/03/outfit_03f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
     items: {
@@ -559,7 +559,7 @@ export const outfits = [
   },
   {
     id: '04',
-    outfit_img: '/img/04/outfit_04f.png',
+    outfit_img: '/img/04/outfit_04f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
     items: {

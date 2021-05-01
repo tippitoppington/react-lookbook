@@ -2,7 +2,9 @@ button {
     padding: 3px;
 }
 
-.section-header {}
+.section-header {
+    margin-bottom: 60px;
+}
 
 .grid-container {
     *zoom: 1;
@@ -76,8 +78,15 @@ div.look {
     color: #000;
 }
 
-.look-description h2,
+.look-description h2 {
+    font-size: 1rem;
+    align-self: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
 .look-description ul {
+    display: none;
     align-self: center;
     margin: 0 0 20px 0;
     padding: 0;
@@ -116,6 +125,11 @@ div.item_list.shift {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+.item p {
+    font-weight: bold;
+    font-size: 0.875em;
+}
+
 div.tall_group {
     display: flex;
     flex-direction: column;
@@ -126,7 +140,7 @@ div.tall_group {
 
 .tall_group div:first-child img {
     object-fit: cover;
-    min-height: 90%;
+    min-height: 100%;
 }
 
 .tall_group div:nth-child(2) {
@@ -136,12 +150,13 @@ div.tall_group {
 .tall_group div:nth-child(2) img {
     object-fit: cover;
     object-position: top;
-    min-height: 80%;
+    min-height: 84%;
 }
 
 .short_group {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-width: 26%;
 }
 
@@ -173,7 +188,7 @@ div.tall_group {
         max-width: 20%;
         padding: 20px;
     }
-    div.look-description {
+    .look-description {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -183,12 +198,13 @@ div.tall_group {
     .look-description ul {
         align-self: flex-start;
     }
+    .look-description ul {
+        display: block;
+    }
     .outfit-img-container {
         max-width: 30%;
-        /* max-height: 500px;*/
     }
     .outfit-image {
-        /* float: right; */
         object-fit: cover;
         min-height: 100%;
         width: auto;
@@ -199,7 +215,6 @@ div.tall_group {
         max-width: 40%;
         background: #fff;
         justify-content: space-evenly;
-        /* padding-left: 60px; */
     }
     div.item_list.shift {
         transform: translateX(-200px);
@@ -224,12 +239,14 @@ div.tall_group {
     .tall_group div:nth-child(2) img {
         object-fit: cover;
         object-position: top;
-        min-height: 90%;
+        /* min-height: 80%; */
     }
     .short_group {
         display: flex;
         flex-direction: column;
         max-width: 26%;
+        padding: 0 0 10px 0;
+        /* background: red; */
     }
     .short_group img {
         object-fit: cover;
