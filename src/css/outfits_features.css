@@ -190,7 +190,7 @@ div.tall_group {
 
 .item-opt img {
     max-width: 30%;
-    height: auto;
+    height: 100%;
 }
 
 @media screen and (min-width: 800px) {
