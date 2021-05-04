@@ -54,15 +54,10 @@ div.look {
     flex-wrap: wrap;
     /* border-top: 1px solid #ccc; */
     object-fit: cover;
-    max-height: 50%;
+    /* max-height: 50%; */
     -webkit-box-shadow: 0px 0px 2px 0px rgba(104, 104, 104, 0.55);
     box-shadow: 0px 0px 2px 0px rgba(104, 104, 104, 0.55);
 }
-
-
-/* .look {
-    max-height: 500px;
-} */
 
 .desc-container {
     width: 100%;
@@ -78,9 +73,7 @@ div.look {
     color: #000;
 }
 
-.look-description h2 {
-    font-size: 1rem;
-    align-self: center;
+.look-description h4 {
     margin: 0 0 20px 0;
     padding: 0;
 }
@@ -97,24 +90,21 @@ div.look {
 }
 
 .outfit-img-container {
-    max-width: 50%;
+    width: 100%;
     /* max-height: 500px;*/
 }
 
 .outfit-image {
-    /* float: right; */
     object-fit: cover;
-    min-height: 100%;
-    width: auto;
 }
 
 div.item_list {
     display: flex;
     flex-direction: row;
-    max-width: 50%;
+    max-width: 100%;
     background: #fff;
     justify-content: space-evenly;
-    /* padding-left: 60px; */
+    transition: 0.35s linear;
 }
 
 div.item_list.shift {
@@ -165,6 +155,44 @@ div.tall_group {
     min-height: 84%;
 }
 
+.item-opts-container {
+    color: #fff;
+    background: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+.item-opts-container .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background: #000;
+    padding: 30px;
+    margin: 0;
+    z-index: 0;
+}
+
+.item-opt {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.item-opt p {
+    line-height: 1.4em;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.item-opt img {
+    max-width: 30%;
+}
+
 @media screen and (min-width: 800px) {
     .section-header {
         display: block;
@@ -178,11 +206,8 @@ div.tall_group {
         flex-wrap: nowrap;
         justify-content: space-evenly;
         margin-top: 20px;
-        object-fit: cover;
-        max-height: 30%;
-    }
-    .look {
-        max-height: 500px;
+        /* object-fit: cover; */
+        /* max-height: 800px; */
     }
     .desc-container {
         max-width: 20%;
@@ -205,7 +230,7 @@ div.tall_group {
         max-width: 30%;
     }
     .outfit-image {
-        object-fit: cover;
+        /* object-fit: cover; */
         min-height: 100%;
         width: auto;
     }
