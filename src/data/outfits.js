@@ -196,7 +196,7 @@ export const outfits = [
           opt: '01_opt_1',
           type: 'top',
           price: '$26.99',
-          src: '/img/02/items/item_01/item_01_1.png',
+          src: '/img/02/items/item_01/item_01_1.webp',
           chosen: 'true',
         },
         {
@@ -233,7 +233,7 @@ export const outfits = [
           opt: '02_opt_1',
           type: 'bottom',
           price: '$26.99',
-          src: '/img/02/items/item_02/item_02_1.png',
+          src: '/img/02/items/item_02/item_02_1.webp',
           chosen: 'true',
         },
         {
@@ -270,7 +270,7 @@ export const outfits = [
           opt: '03_opt_1',
           type: 'outer',
           price: '$26.99',
-          src: '/img/02/items/item_03/item_03_1.png',
+          src: '/img/02/items/item_03/item_03_1.webp',
           chosen: 'true',
         },
         {
@@ -300,7 +300,7 @@ export const outfits = [
           opt: '04_opt_1',
           type: 'handbag',
           price: '$26.99',
-          src: '/img/02/items/item_04/item_04_1.png',
+          src: '/img/02/items/item_04/item_04_1.webp',
           chosen: 'true',
         },
         {
@@ -337,7 +337,7 @@ export const outfits = [
           opt: '05_opt_1',
           type: 'shoes',
           price: '$26.99',
-          src: '/img/02/items/item_05/item_05_1.png',
+          src: '/img/02/items/item_05/item_05_1.webp',
           chosen: 'true',
         },
         {
@@ -382,7 +382,7 @@ export const outfits = [
           opt: '01_opt_1',
           type: 'top',
           price: '$26.99',
-          src: '/img/03/items/item_01/item_01_1.png',
+          src: '/img/03/items/item_01/item_01_1.webp',
           chosen: 'true',
         },
         {
@@ -419,7 +419,7 @@ export const outfits = [
           opt: '02_opt_1',
           type: 'bottom',
           price: '$26.99',
-          src: '/img/03/items/item_02/item_02_1.png',
+          src: '/img/03/items/item_02/item_02_1.webp',
           chosen: 'true',
         },
         {
@@ -456,7 +456,7 @@ export const outfits = [
           opt: '03_opt_1',
           type: 'outer',
           price: '$26.99',
-          src: '/img/03/items/item_03/item_03_1.png',
+          src: '/img/03/items/item_03/item_03_1.webp',
           chosen: 'true',
         },
         {
@@ -486,7 +486,7 @@ export const outfits = [
           opt: '04_opt_1',
           type: 'handbag',
           price: '$26.99',
-          src: '/img/03/items/item_04/item_04_1.png',
+          src: '/img/03/items/item_04/item_04_1.webp',
           chosen: 'true',
         },
         {
@@ -523,7 +523,7 @@ export const outfits = [
           opt: '05_opt_1',
           type: 'shoes',
           price: '$26.99',
-          src: '/img/03/items/item_05/item_05_1.png',
+          src: '/img/03/items/item_05/item_05_1.webp',
           chosen: 'true',
         },
         {
@@ -568,7 +568,7 @@ export const outfits = [
           opt: '01_opt_1',
           type: 'top',
           price: '$26.99',
-          src: '/img/04/items/item_01/item_01_1.png',
+          src: '/img/04/items/item_01/item_01_1.webp',
           chosen: 'true',
         },
         {
@@ -605,7 +605,7 @@ export const outfits = [
           opt: '02_opt_1',
           type: 'bottom',
           price: '$26.99',
-          src: '/img/04/items/item_02/item_02_1.png',
+          src: '/img/04/items/item_02/item_02_1.webp',
           chosen: 'true',
         },
         {
@@ -642,7 +642,7 @@ export const outfits = [
           opt: '03_opt_1',
           type: 'outer',
           price: '$26.99',
-          src: '/img/04/items/item_03/item_03_1.png',
+          src: '/img/04/items/item_03/item_03_1.webp',
           chosen: 'true',
         },
         {
@@ -672,7 +672,7 @@ export const outfits = [
           opt: '04_opt_1',
           type: 'handbag',
           price: '$26.99',
-          src: '/img/04/items/item_04/item_04_1.png',
+          src: '/img/04/items/item_04/item_04_1.webp',
           chosen: 'true',
         },
         {
@@ -709,7 +709,7 @@ export const outfits = [
           opt: '05_opt_1',
           type: 'shoes',
           price: '$26.99',
-          src: '/img/04/items/item_05/item_05_1.png',
+          src: '/img/04/items/item_05/item_05_1.webp',
           chosen: 'true',
         },
         {
