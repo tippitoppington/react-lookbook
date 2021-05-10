@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import ItemOptions from './ItemOptions';
+import ItemList from './ItemList';
 import { outfits } from '../data/outfits';
 import '../css/main.css';
 import '../css/outfits_features.css';
 
 const Outfit = ({ id }) => {
   const outfit = outfits.filter((o) => o.id === id);
+  const o = outfit[0];
+  const [itemOptions, setItemOptions] = useState('item_01');
+  const [itemList, setItemList] = useState([]);
+  const item1 = o.item_01.filter((item) => item.chosen === 'true');
+  const item2 = o.item_02.filter((item) => item.chosen === 'true');
+  const item3 = o.item_03.filter((item) => item.chosen === 'true');
+  const item4 = o.item_04.filter((item) => item.chosen === 'true');
+  const item5 = o.item_05.filter((item) => item.chosen === 'true');
 
-  const [itemNumber, setItemNumber] = useState('item_01');
-  const [chosenItem, setChosenItem] = useState('');
   return (
     <>
       {outfit.map((o, key) => (
@@ -31,78 +38,16 @@ const Outfit = ({ id }) => {
             />
           </div>
 
-          <div className='item_list  ' style={o.style}>
-            <div className='tall_group'>
-              {o.item_01
-                .filter((item) => item.chosen === 'true')
-                .map((chosenItem, key) => (
-                  <div className='item' key={key}>
-                    <img
-                      src={chosenItem.src}
-                      alt='an awesome first item'
-                      onClick={() => setItemNumber('item_01')}
-                    />
-                    <p>{chosenItem.price}</p>
-                  </div>
-                ))}
-
-              {o.item_02
-                .filter((item) => item.chosen === 'true')
-                .map((chosenItem, key) => (
-                  <div className='item' key={key}>
-                    <img
-                      src={chosenItem.src}
-                      alt='an awesome second item'
-                      onClick={() => setItemNumber('item_02')}
-                    />
-                    <p>{chosenItem.price}</p>
-                  </div>
-                ))}
-            </div>
-
-            <div className='short_group'>
-              {o.item_03
-                .filter((item) => item.chosen === 'true')
-                .map((chosenItem, key) => (
-                  <div className='item' key={key}>
-                    <img
-                      src={chosenItem.src}
-                      alt='an awesome third item'
-                      className='item'
-                      onClick={() => setItemNumber('item_03')}
-                    />
-                    <p>{chosenItem.price}</p>
-                  </div>
-                ))}
-              {o.item_04
-                .filter((item) => item.chosen === 'true')
-                .map((chosenItem, key) => (
-                  <div className='item' key={key}>
-                    <img
-                      src={chosenItem.src}
-                      alt='an awesome fourth item'
-                      className='item'
-                      onClick={() => setItemNumber('item_04')}
-                    />
-                    <p>{chosenItem.price}</p>
-                  </div>
-                ))}
-              {o.item_05
-                .filter((item) => item.chosen === 'true')
-                .map((chosenItem, key) => (
-                  <div className='item' key={key}>
-                    <img
-                      src={chosenItem.src}
-                      alt='an awesome fifth item'
-                      className='item'
-                      onClick={() => setItemNumber('item_05')}
-                    />
-                    <p>{chosenItem.price}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-          <ItemOptions id={id} outfit={outfit} itemNumber={itemNumber} />
+          <ItemList
+            outfit={outfit}
+            setItemOptions={setItemOptions}
+            item1={item1}
+            item2={item2}
+            item3={item3}
+            item4={item4}
+            item5={item5}
+          />
+          <ItemOptions outfit={outfit} itemOptions={itemOptions} />
         </div>
       ))}
     </>

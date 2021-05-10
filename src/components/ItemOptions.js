@@ -3,9 +3,9 @@ import React from 'react';
 import '../css/main.css';
 import '../css/outfits_features.css';
 
-const ItemOptions = ({ outfit, itemNumber }) => {
-  const itemOpts = outfit[0][itemNumber];
-
+const ItemOptions = ({ outfit, itemOptions }) => {
+  const itemOpts = outfit[0][itemOptions];
+  //handle click on item option that updates the item list array with chosen item option, by looping through all item options, setting chosen to false and just true on the clicked item.
   return (
     <>
       <div className='item-opts-container'>
