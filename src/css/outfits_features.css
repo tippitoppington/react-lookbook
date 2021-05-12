@@ -329,7 +329,7 @@ div.tall_group {
     }
     .item-opts-container.visible {
         width: 30%;
-        opacity: 100%;
+        opacity: 1;
         color: #000;
         background: #eee;
         display: flex;
