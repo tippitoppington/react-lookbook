@@ -4,12 +4,13 @@ import '../css/outfits_features.css';
 
 const ItemList = ({
   outfit,
-  setItemOptions,
+  toggleItem,
   item1,
   item2,
   item3,
   item4,
   item5,
+  open,
 }) => {
   const o = outfit[0];
 
@@ -17,14 +18,16 @@ const ItemList = ({
 
   return (
     <>
-      <div className='item_list' style={o.style}>
+      <div
+        className={open === 'true' ? 'item_list open' : 'item_list'}
+        style={o.style}>
         <div className='tall_group'>
           {item1.map((chosenItem, key) => (
             <div className='item' key={key}>
               <img
                 src={chosenItem.src}
                 alt='an awesome first item'
-                onClick={() => setItemOptions('item_01')}
+                onClick={() => toggleItem('item_01')}
               />
               <p>{chosenItem.price}</p>
             </div>
@@ -35,7 +38,7 @@ const ItemList = ({
               <img
                 src={chosenItem.src}
                 alt='an awesome second item'
-                onClick={() => setItemOptions('item_02')}
+                onClick={() => toggleItem('item_02')}
               />
               <p>{chosenItem.price}</p>
             </div>
@@ -49,7 +52,7 @@ const ItemList = ({
                 src={chosenItem.src}
                 alt='an awesome third item'
                 className='item'
-                onClick={() => setItemOptions('item_03')}
+                onClick={() => toggleItem('item_03')}
               />
               <p>{chosenItem.price}</p>
             </div>
@@ -60,7 +63,7 @@ const ItemList = ({
                 src={chosenItem.src}
                 alt='an awesome fourth item'
                 className='item'
-                onClick={() => setItemOptions('item_04')}
+                onClick={() => toggleItem('item_04')}
               />
               <p>{chosenItem.price}</p>
             </div>
@@ -71,7 +74,7 @@ const ItemList = ({
                 src={chosenItem.src}
                 alt='an awesome fifth item'
                 className='item'
-                onClick={() => setItemOptions('item_05')}
+                onClick={() => toggleItem('item_05')}
               />
               <p>{chosenItem.price}</p>
             </div>

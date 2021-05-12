@@ -9,7 +9,15 @@ const Outfit = ({ id }) => {
   const outfit = outfits.filter((o) => o.id === id);
   const o = outfit[0];
   const [itemOptions, setItemOptions] = useState('item_01');
-  const [itemList, setItemList] = useState([]);
+  const [open, setOpen] = useState('false');
+  const [visible, setVisible] = useState('false');
+  const toggleItem = (item) => {
+    setItemOptions(item);
+    setOpen('true');
+    setVisible('true');
+  };
+
+  // const [itemList, setItemList] = useState([]);
   const item1 = o.item_01.filter((item) => item.chosen === 'true');
   const item2 = o.item_02.filter((item) => item.chosen === 'true');
   const item3 = o.item_03.filter((item) => item.chosen === 'true');
@@ -40,14 +48,19 @@ const Outfit = ({ id }) => {
 
           <ItemList
             outfit={outfit}
-            setItemOptions={setItemOptions}
+            toggleItem={toggleItem}
             item1={item1}
             item2={item2}
             item3={item3}
             item4={item4}
             item5={item5}
+            open={open}
           />
-          <ItemOptions outfit={outfit} itemOptions={itemOptions} />
+          <ItemOptions
+            outfit={outfit}
+            itemOptions={itemOptions}
+            visible={visible}
+          />
         </div>
       ))}
     </>
