@@ -2,27 +2,42 @@ import React from 'react';
 import '../css/main.css';
 import '../css/outfits_features.css';
 
-const ItemOptions = ({ outfit, itemOptions, visible }) => {
-  const itemOpts = outfit[0][itemOptions];
-  //handle click on item option that updates the item list array with chosen item option, by looping through all item options, setting chosen to false and just true on the clicked item.
+const ItemOptions = ({
+  outfit,
+  itemCategory,
+  handleOption,
+  setItem1,
+  setItem2,
+  setItem3,
+  setItem4,
+  setItem5,
+  visible,
+}) => {
+  const itemCat = outfit[0][itemCategory];
+  //handleOptions function on item category that updates the item list array with chosen item option, by looping through all item options, setting chosen to false and just true on the clicked item.
+  //i in itemOpts is the item #
   return (
     <>
       <div
         className={
-          visible == 'true'
+          visible === 'true'
             ? 'item-opts-container visible'
             : 'item-opts-container'
         }>
         <div className='panel-header sticky'>
           <h4>Change item</h4>
         </div>
-        {itemOpts.map((i, key) => (
-          <div className='item-opt'>
-            <img src={i.src} alt='an alternate item' />
+        {itemCat.map((opt, key) => (
+          <div className='item-opt' key={key}>
+            <img
+              src={opt.src}
+              alt='an alternate item'
+              onClick={() => handleOption(itemCat, opt)}
+            />
             <div className='item-info'>
               <p>Hello</p>
-              <p>{i.name}</p>
-              <p>{i.price}</p>
+              <p>{opt.name}</p>
+              <p>{opt.price}</p>
               <p>View Details</p>
             </div>
           </div>

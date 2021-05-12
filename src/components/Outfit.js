@@ -8,22 +8,24 @@ import '../css/outfits_features.css';
 const Outfit = ({ id }) => {
   const outfit = outfits.filter((o) => o.id === id);
   const o = outfit[0];
-  const [itemOptions, setItemOptions] = useState('item_01');
+  const [itemCategory, setItemCategory] = useState('item_01');
   const [open, setOpen] = useState('false');
   const [visible, setVisible] = useState('false');
   const toggleItem = (item) => {
-    setItemOptions(item);
+    setItemCategory(item);
     setOpen('true');
     setVisible('true');
   };
-
-  // const [itemList, setItemList] = useState([]);
   const item1 = o.item_01.filter((item) => item.chosen === 'true');
   const item2 = o.item_02.filter((item) => item.chosen === 'true');
   const item3 = o.item_03.filter((item) => item.chosen === 'true');
   const item4 = o.item_04.filter((item) => item.chosen === 'true');
   const item5 = o.item_05.filter((item) => item.chosen === 'true');
 
+  const [items, setItems] = useState([item1, item2, item3, item4, item5]);
+  const handleOption = (itemCat, itemOpt) => {
+    console.log(itemCat, itemOpt);
+  };
   return (
     <>
       {outfit.map((o, key) => (
@@ -58,8 +60,9 @@ const Outfit = ({ id }) => {
           />
           <ItemOptions
             outfit={outfit}
-            itemOptions={itemOptions}
+            itemCategory={itemCategory}
             visible={visible}
+            handleOption={handleOption}
           />
         </div>
       ))}
