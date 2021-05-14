@@ -11,25 +11,54 @@ const Outfit = ({ id }) => {
   const [itemCategory, setItemCategory] = useState('item_01');
   const [open, setOpen] = useState('false');
   const [visible, setVisible] = useState('false');
-  const toggleItem = (item) => {
-    setItemCategory(item);
+  const showItem = (itemCat) => {
+    setItemCategory(itemCat);
     setOpen('true');
     setVisible('true');
   };
-  const item1 = o.item_01.filter((item) => item.chosen === 'true');
-  const item2 = o.item_02.filter((item) => item.chosen === 'true');
-  const item3 = o.item_03.filter((item) => item.chosen === 'true');
-  const item4 = o.item_04.filter((item) => item.chosen === 'true');
-  const item5 = o.item_05.filter((item) => item.chosen === 'true');
+  //find the option object
+  const [item1, setItem1] = useState(o.item_01[0]);
+  const [item2, setItem2] = useState(o.item_02[0]);
+  const [item3, setItem3] = useState(o.item_03[0]);
+  const [item4, setItem4] = useState(o.item_04[0]);
+  const [item5, setItem5] = useState(o.item_05[0]);
 
-  const [items, setItems] = useState([item1, item2, item3, item4, item5]);
+  // const [items, setItems] = useState([item1, item2, item3, item4, item5]);
   const handleOption = (itemCat, itemOpt) => {
-    console.log(itemCat, itemOpt);
+    switch (itemCat) {
+      case 'item_01':
+        setItem1(itemOpt);
+        break;
+      case 'item_02':
+        setItem2(itemOpt);
+        break;
+      case 'item_03':
+        setItem3(itemOpt);
+        break;
+      case 'item_04':
+        setItem4(itemOpt);
+        break;
+      case 'item_05':
+        setItem5(itemOpt);
+        break;
+      default:
+        alert("I don't know such values");
+    }
+    console
+      .log
+      //After returns:
+      //Outfit.js after: item1.src  = /img/01/items/item_01/item_01_1.webp itemOpt.src = /img/01/items/item_01/item_01_2.webp}
+
+      // `Outfit.js after: item1.src  = ${item1} itemOpt = ${itemOpt}}`
+      ();
   };
+  //Before returns:
+  //Outfit.js before: item1.src  = /img/01/items/item_01/item_01_1.webp
+  // console.log(`Outfit.js before: item1.type  = ${item1[0].type}`);
   return (
     <>
-      {outfit.map((o, key) => (
-        <div className='look' style={o.style} key={key}>
+      {outfit.map((o) => (
+        <div className='look' style={o.style}>
           <div className='desc-container'>
             <div className='look-description'>
               <h4>Style Name</h4>
@@ -50,7 +79,7 @@ const Outfit = ({ id }) => {
 
           <ItemList
             outfit={outfit}
-            toggleItem={toggleItem}
+            showItem={showItem}
             item1={item1}
             item2={item2}
             item3={item3}
@@ -60,6 +89,7 @@ const Outfit = ({ id }) => {
           />
           <ItemOptions
             outfit={outfit}
+            item1={item1}
             itemCategory={itemCategory}
             visible={visible}
             handleOption={handleOption}

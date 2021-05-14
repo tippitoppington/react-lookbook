@@ -4,18 +4,14 @@ import '../css/outfits_features.css';
 
 const ItemOptions = ({
   outfit,
+  item1,
   itemCategory,
   handleOption,
-  setItem1,
-  setItem2,
-  setItem3,
-  setItem4,
-  setItem5,
   visible,
 }) => {
-  const itemCat = outfit[0][itemCategory];
-  //handleOptions function on item category that updates the item list array with chosen item option, by looping through all item options, setting chosen to false and just true on the clicked item.
-  //i in itemOpts is the item #
+  //get array of options from itemCategory(ex: 'item_01")
+  const itemCatObj = outfit[0][itemCategory];
+
   return (
     <>
       <div
@@ -27,12 +23,12 @@ const ItemOptions = ({
         <div className='panel-header sticky'>
           <h4>Change item</h4>
         </div>
-        {itemCat.map((opt, key) => (
+        {itemCatObj.map((opt, key) => (
           <div className='item-opt' key={key}>
             <img
               src={opt.src}
               alt='an alternate item'
-              onClick={() => handleOption(itemCat, opt)}
+              onClick={() => handleOption(itemCategory, opt)}
             />
             <div className='item-info'>
               <p>Hello</p>

@@ -328,7 +328,7 @@ div.tall_group {
         transition: all 1s;
     }
     .item-opts-container.visible {
-        width: 30%;
+        width: 26%;
         opacity: 1;
         color: #000;
         background: #eee;
