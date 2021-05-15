@@ -6,7 +6,7 @@ export const outfits = [
     style: { backgroundColor: '#ffffff' },
     item_01: [
       {
-        opt1: '01_opt_1',
+        opt: '01_opt_1',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -15,7 +15,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '01_opt_2',
+        opt: '01_opt_2',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -24,7 +24,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '01_opt_3',
+        opt: '01_opt_3',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -33,7 +33,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '01_opt_4',
+        opt: '01_opt_4',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -42,7 +42,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '01_opt_5',
+        opt: '01_opt_5',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -53,7 +53,7 @@ export const outfits = [
     ],
     item_02: [
       {
-        opt1: '02_opt_1',
+        opt: '02_opt_1',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -62,7 +62,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '02_opt_2',
+        opt: '02_opt_2',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -71,7 +71,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '02_opt_3',
+        opt: '02_opt_3',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -80,7 +80,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '02_opt_4',
+        opt: '02_opt_4',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -89,7 +89,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '02_opt_5',
+        opt: '02_opt_5',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -100,7 +100,7 @@ export const outfits = [
     ],
     item_03: [
       {
-        opt1: '03_opt_1',
+        opt: '03_opt_1',
         type: 'accessories',
         brand: 'brand',
         name: 'product name',
@@ -109,7 +109,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '03_opt_2',
+        opt: '03_opt_2',
         type: 'accessories',
         brand: 'brand',
         name: 'product name',
@@ -118,7 +118,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '03_opt_3',
+        opt: '03_opt_3',
         type: 'accessories',
         brand: 'brand',
         name: 'product name',
@@ -127,7 +127,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '03_opt_4',
+        opt: '03_opt_4',
         type: 'accessories',
         brand: 'brand',
         name: 'product name',
@@ -136,7 +136,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '03_opt_5',
+        opt: '03_opt_5',
         type: 'accessories',
         brand: 'brand',
         name: 'product name',
@@ -147,7 +147,7 @@ export const outfits = [
     ],
     item_04: [
       {
-        opt1: '04_opt_1',
+        opt: '04_opt_1',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -156,7 +156,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '04_opt_2',
+        opt: '04_opt_2',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -165,7 +165,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '04_opt_3',
+        opt: '04_opt_3',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -174,7 +174,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '04_opt_4',
+        opt: '04_opt_4',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -183,7 +183,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '04_opt_5',
+        opt: '04_opt_5',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -194,7 +194,7 @@ export const outfits = [
     ],
     item_05: [
       {
-        opt1: '05_opt_1',
+        opt: '05_opt_1',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -203,7 +203,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '05_opt_2',
+        opt: '05_opt_2',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -212,7 +212,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '05_opt_3',
+        opt: '05_opt_3',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -221,7 +221,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '05_opt_4',
+        opt: '05_opt_4',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -230,7 +230,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '05_opt_5',
+        opt: '05_opt_5',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -248,7 +248,7 @@ export const outfits = [
 
     item_01: [
       {
-        opt1: '01_opt_1',
+        opt: '01_opt_1',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -257,7 +257,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '01_opt_2',
+        opt: '01_opt_2',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -266,7 +266,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '01_opt_3',
+        opt: '01_opt_3',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -275,7 +275,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '01_opt_4',
+        opt: '01_opt_4',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -284,7 +284,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '01_opt_5',
+        opt: '01_opt_5',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -295,7 +295,7 @@ export const outfits = [
     ],
     item_02: [
       {
-        opt1: '02_opt_1',
+        opt: '02_opt_1',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -304,7 +304,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '02_opt_2',
+        opt: '02_opt_2',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -313,7 +313,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '02_opt_3',
+        opt: '02_opt_3',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -322,7 +322,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '02_opt_4',
+        opt: '02_opt_4',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -331,7 +331,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '02_opt_5',
+        opt: '02_opt_5',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -342,7 +342,7 @@ export const outfits = [
     ],
     item_03: [
       {
-        opt1: '03_opt_1',
+        opt: '03_opt_1',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -351,7 +351,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '03_opt_2',
+        opt: '03_opt_2',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -360,7 +360,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '03_opt_3',
+        opt: '03_opt_3',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -369,7 +369,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '03_opt_4',
+        opt: '03_opt_4',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -380,7 +380,7 @@ export const outfits = [
     ],
     item_04: [
       {
-        opt1: '04_opt_1',
+        opt: '04_opt_1',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -389,7 +389,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '04_opt_2',
+        opt: '04_opt_2',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -398,7 +398,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '04_opt_3',
+        opt: '04_opt_3',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -407,7 +407,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '04_opt_4',
+        opt: '04_opt_4',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -416,7 +416,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '04_opt_5',
+        opt: '04_opt_5',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -427,7 +427,7 @@ export const outfits = [
     ],
     item_05: [
       {
-        opt1: '05_opt_1',
+        opt: '05_opt_1',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -436,7 +436,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '05_opt_2',
+        opt: '05_opt_2',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -445,7 +445,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '05_opt_3',
+        opt: '05_opt_3',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -454,7 +454,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '05_opt_4',
+        opt: '05_opt_4',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -463,7 +463,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '05_opt_5',
+        opt: '05_opt_5',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -481,7 +481,7 @@ export const outfits = [
 
     item_01: [
       {
-        opt1: '01_opt_1',
+        opt: '01_opt_1',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -490,7 +490,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '01_opt_2',
+        opt: '01_opt_2',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -499,7 +499,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '01_opt_3',
+        opt: '01_opt_3',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -508,7 +508,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '01_opt_4',
+        opt: '01_opt_4',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -517,7 +517,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '01_opt_5',
+        opt: '01_opt_5',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -528,7 +528,7 @@ export const outfits = [
     ],
     item_02: [
       {
-        opt1: '02_opt_1',
+        opt: '02_opt_1',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -537,7 +537,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '02_opt_2',
+        opt: '02_opt_2',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -546,7 +546,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '02_opt_3',
+        opt: '02_opt_3',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -555,7 +555,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '02_opt_4',
+        opt: '02_opt_4',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -564,7 +564,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '02_opt_5',
+        opt: '02_opt_5',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -575,7 +575,7 @@ export const outfits = [
     ],
     item_03: [
       {
-        opt1: '03_opt_1',
+        opt: '03_opt_1',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -584,7 +584,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '03_opt_2',
+        opt: '03_opt_2',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -593,7 +593,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '03_opt_3',
+        opt: '03_opt_3',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -602,7 +602,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '03_opt_4',
+        opt: '03_opt_4',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -613,7 +613,7 @@ export const outfits = [
     ],
     item_04: [
       {
-        opt1: '04_opt_1',
+        opt: '04_opt_1',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -622,7 +622,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '04_opt_2',
+        opt: '04_opt_2',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -631,7 +631,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '04_opt_3',
+        opt: '04_opt_3',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -640,7 +640,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '04_opt_4',
+        opt: '04_opt_4',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -649,7 +649,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '04_opt_5',
+        opt: '04_opt_5',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -660,7 +660,7 @@ export const outfits = [
     ],
     item_05: [
       {
-        opt1: '05_opt_1',
+        opt: '05_opt_1',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -669,7 +669,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '05_opt_2',
+        opt: '05_opt_2',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -678,7 +678,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '05_opt_3',
+        opt: '05_opt_3',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -687,7 +687,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '05_opt_4',
+        opt: '05_opt_4',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -696,7 +696,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '05_opt_5',
+        opt: '05_opt_5',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -713,7 +713,7 @@ export const outfits = [
     style: { backgroundColor: '#ffffff' },
     item_01: [
       {
-        opt1: '01_opt_1',
+        opt: '01_opt_1',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -722,7 +722,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '01_opt_2',
+        opt: '01_opt_2',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -731,7 +731,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '01_opt_3',
+        opt: '01_opt_3',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -740,7 +740,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '01_opt_4',
+        opt: '01_opt_4',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -749,7 +749,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '01_opt_5',
+        opt: '01_opt_5',
         type: 'top',
         brand: 'brand',
         name: 'product name',
@@ -760,7 +760,7 @@ export const outfits = [
     ],
     item_02: [
       {
-        opt1: '02_opt_1',
+        opt: '02_opt_1',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -769,7 +769,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '02_opt_2',
+        opt: '02_opt_2',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -778,7 +778,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '02_opt_3',
+        opt: '02_opt_3',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -787,7 +787,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '02_opt_4',
+        opt: '02_opt_4',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -796,7 +796,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '02_opt_5',
+        opt: '02_opt_5',
         type: 'bottom',
         brand: 'brand',
         name: 'product name',
@@ -807,7 +807,7 @@ export const outfits = [
     ],
     item_03: [
       {
-        opt1: '03_opt_1',
+        opt: '03_opt_1',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -816,7 +816,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '03_opt_2',
+        opt: '03_opt_2',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -825,7 +825,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '03_opt_3',
+        opt: '03_opt_3',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -834,7 +834,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '03_opt_4',
+        opt: '03_opt_4',
         type: 'outer',
         brand: 'brand',
         name: 'product name',
@@ -845,7 +845,7 @@ export const outfits = [
     ],
     item_04: [
       {
-        opt1: '04_opt_1',
+        opt: '04_opt_1',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -854,7 +854,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '04_opt_2',
+        opt: '04_opt_2',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -863,7 +863,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '04_opt_3',
+        opt: '04_opt_3',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -872,7 +872,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '04_opt_4',
+        opt: '04_opt_4',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -881,7 +881,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '04_opt_5',
+        opt: '04_opt_5',
         type: 'handbag',
         brand: 'brand',
         name: 'product name',
@@ -892,7 +892,7 @@ export const outfits = [
     ],
     item_05: [
       {
-        opt1: '05_opt_1',
+        opt: '05_opt_1',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -901,7 +901,7 @@ export const outfits = [
         chosen: 'true',
       },
       {
-        opt2: '05_opt_2',
+        opt: '05_opt_2',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -910,7 +910,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt3: '05_opt_3',
+        opt: '05_opt_3',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -919,7 +919,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt4: '05_opt_4',
+        opt: '05_opt_4',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',
@@ -928,7 +928,7 @@ export const outfits = [
         chosen: 'false',
       },
       {
-        opt5: '05_opt_5',
+        opt: '05_opt_5',
         type: 'shoes',
         brand: 'brand',
         name: 'product name',

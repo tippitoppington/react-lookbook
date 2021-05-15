@@ -4,7 +4,7 @@ import '../css/outfits_features.css';
 
 const ItemList = ({
   outfit,
-  showItem,
+  toggleItem,
   item1,
   item2,
   item3,
@@ -15,65 +15,70 @@ const ItemList = ({
   const o = outfit[0];
 
   //handle click on item in list that adds class to shift the itemList div,
-  //initally need item1[0] to render the item List but then when you click an option, but after {opt} is passed, the list needs just item1
-  //so take out the [0] and you won't see default images but clicking an option works
+
   return (
     <>
       <div
         className={open === 'true' ? 'item_list open' : 'item_list'}
         style={o.style}>
         <div className='tall_group'>
-          {
-            <div className='item'>
+          {item1.map((chosenItem, key) => (
+            <div className='item' key={key}>
               <img
-                src={item1.src}
+                src={chosenItem.src}
                 alt='an awesome first item'
-                onClick={() => showItem('item_01')}
+                onClick={() => toggleItem('item_01')}
               />
-              <p>{item1.price}</p>
+              <p>{chosenItem.price}</p>
             </div>
-          }
+          ))}
 
-          <div className='item'>
-            <img
-              src={item2.src}
-              alt='an awesome second item'
-              onClick={() => showItem('item_02')}
-            />
-            <p>{item2.price}</p>
-          </div>
+          {item2.map((chosenItem, key) => (
+            <div className='item' key={key}>
+              <img
+                src={chosenItem.src}
+                alt='an awesome second item'
+                onClick={() => toggleItem('item_02')}
+              />
+              <p>{chosenItem.price}</p>
+            </div>
+          ))}
         </div>
 
         <div className='short_group'>
-          <div className='item'>
-            <img
-              src={item3.src}
-              alt='an awesome third item'
-              className='item'
-              onClick={() => showItem('item_03')}
-            />
-            <p>{item3.price}</p>
-          </div>
-
-          <div className='item'>
-            <img
-              src={item4.src}
-              alt='an awesome fourth item'
-              className='item'
-              onClick={() => showItem('item_04')}
-            />
-            <p>{item4.price}</p>
-          </div>
-
-          <div className='item'>
-            <img
-              src={item5.src}
-              alt='an awesome fifth item'
-              className='item'
-              onClick={() => showItem('item_05')}
-            />
-            <p>{item5.price}</p>
-          </div>
+          {item3.map((chosenItem, key) => (
+            <div className='item' key={key}>
+              <img
+                src={chosenItem.src}
+                alt='an awesome third item'
+                className='item'
+                onClick={() => toggleItem('item_03')}
+              />
+              <p>{chosenItem.price}</p>
+            </div>
+          ))}
+          {item4.map((chosenItem, key) => (
+            <div className='item' key={key}>
+              <img
+                src={chosenItem.src}
+                alt='an awesome fourth item'
+                className='item'
+                onClick={() => toggleItem('item_04')}
+              />
+              <p>{chosenItem.price}</p>
+            </div>
+          ))}
+          {item5.map((chosenItem, key) => (
+            <div className='item' key={key}>
+              <img
+                src={chosenItem.src}
+                alt='an awesome fifth item'
+                className='item'
+                onClick={() => toggleItem('item_05')}
+              />
+              <p>{chosenItem.price}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>
