@@ -4,6 +4,7 @@ import '../css/outfits_features.css';
 
 const ItemOptions = ({ outfit, itemCategory, handleOption, visible }) => {
   const itemCat = outfit[0][itemCategory];
+
   //handleOptions function on item category that updates the item list array with chosen item option, by looping through all item options, setting chosen to false and just true on the clicked item.
   //i in itemOpts is the item #
   return (
@@ -22,7 +23,7 @@ const ItemOptions = ({ outfit, itemCategory, handleOption, visible }) => {
             <img
               src={opt.src}
               alt='an alternate item'
-              onClick={() => handleOption(itemCat, opt)}
+              onClick={() => handleOption(itemCategory, opt.opt)}
             />
             <div className='item-info'>
               <p>Hello</p>

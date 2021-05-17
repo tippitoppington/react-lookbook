@@ -13,11 +13,7 @@ const ItemList = ({
   open,
 }) => {
   const o = outfit[0];
-  console.log(`itemList.js, outfit[0].id = ${outfit[0].id}`);
-  console.log(`itemList.js, item1[0].src = ${item1[0].src}`);
-  //handle click on item in list that adds class to shift the itemList div,
-  //initally need item1[0] to render the item List but then when you click an option, but after {opt} is passed, the list needs just item1
-  //so take out the [0] and you won't see default images but clicking an option works
+
   return (
     <>
       <div

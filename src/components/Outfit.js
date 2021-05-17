@@ -5,22 +5,21 @@ import ItemList from './ItemList';
 import '../css/main.css';
 import '../css/outfits_features.css';
 
-const Outfit = ({ outfit, item1, item2, item3, item4, item5 }) => {
-  const [itemCategory, setItemCategory] = useState('item_01');
-  const [open, setOpen] = useState('false');
-  const [visible, setVisible] = useState('false');
-  const showItem = (item) => {
-    setItemCategory(item);
-    setOpen('true');
-    setVisible('true');
-  };
-
-  const handleOption = (itemCat, itemOpt) => {
-    console.log(itemCat, itemOpt);
-  };
-
-  console.log(`Outfit.js, outfit[0].id = ${outfit[0].id}`);
-  console.log(`Outfit.js, item1[0].src = ${item1[0].src}`);
+const Outfit = ({
+  outfit,
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  showItem,
+  handleOption,
+  open,
+  visible,
+  itemCategory,
+}) => {
+  // console.log(`Outfit.js, itemCategory = ${itemCategory}`);
+  // console.log(`Outfit.js, item1[0].src = ${item1[0].src}`);
   return (
     <>
       <div className='look' style={outfit[0].style}>
