@@ -9,7 +9,7 @@ const Outfit = ({ outfit, item1, item2, item3, item4, item5 }) => {
   const [itemCategory, setItemCategory] = useState('item_01');
   const [open, setOpen] = useState('false');
   const [visible, setVisible] = useState('false');
-  const toggleItem = (item) => {
+  const showItem = (item) => {
     setItemCategory(item);
     setOpen('true');
     setVisible('true');
@@ -44,7 +44,7 @@ const Outfit = ({ outfit, item1, item2, item3, item4, item5 }) => {
 
         <ItemList
           outfit={outfit}
-          toggleItem={toggleItem}
+          showItem={showItem}
           item1={item1}
           item2={item2}
           item3={item3}
