@@ -48,6 +48,7 @@ div.look {
     /* position: relative; */
     margin: 0 auto;
     width: 100%;
+    /* max-height: 2800px; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -104,13 +105,15 @@ div.look {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    background: rgb(155, 165, 238);
+    background: rgb(255, 255, 255);
     justify-content: space-evenly;
-    transition: 0.35s linear;
     z-index: 10;
+    transform: translateY(0);
+    transition: all 1s linear;
 }
 
 .item_list.open {
+    transform: translateY(-400px);
     -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     -o-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -175,19 +178,23 @@ div.tall_group {
 }
 
 .item-opts-container {
-    display: none;
-}
-
-.item-opts-container.visible {
+    max-height: 0px;
     color: #000;
     background: #eee;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    max-height: 600px;
-    justify-self: flex-start;
     overflow-y: auto;
     z-index: 1;
+    transform: translateY(0);
+    transition: all 1s linear;
+}
+
+.item-opts-container.visible {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    justify-self: flex-start;
+    transform: translateY(-400px);
+    margin-bottom: -400px;
 }
 
 .panel-header.sticky {
@@ -241,7 +248,7 @@ div.tall_group {
         max-height: 500px;
     }
     .desc-container {
-        width: 20%;
+        max-width: 20%;
         padding: 20px;
     }
     .look-description {
@@ -258,7 +265,7 @@ div.tall_group {
         display: block;
     }
     .outfit-img-container {
-        width: 30%;
+        max-width: 30%;
     }
     .outfit-image {
         /* object-fit: cover; */
@@ -269,14 +276,14 @@ div.tall_group {
         position: relative;
         display: flex;
         flex-direction: row;
-        right: 0;
-        width: 40%;
-        background: #fff;
-        justify-content: flex-start;
-        transition: all 1s;
+        max-width: 40%;
+        /* background: rgb(155, 165, 238) !important; */
+        justify-content: space-evenly;
+        transform: translateX(100px);
+        transition: all 1s linear;
     }
     div.item_list.open {
-        width: 30%;
+        transform: translateX(0);
         -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
         -o-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -324,20 +331,24 @@ div.tall_group {
         margin-bottom: 16px;
     }
     .item-opts-container {
-        opacity: 0;
-        transition: all 1s;
-    }
-    .item-opts-container.visible {
-        width: 26%;
-        opacity: 1;
         color: #000;
         background: #eee;
+        max-height: 500px;
+        max-width: 25%;
+        opacity: 0;
         display: flex;
         flex-direction: column;
         justify-self: flex-start;
-        max-height: 500px;
         overflow-y: auto;
         z-index: 1;
+        transform: translateX(-300px);
+        transition: all 0.75s linear;
+        /* transition-delay: 0.5s; */
+    }
+    .item-opts-container.visible {
+        opacity: 1;
+        transform: translateX(0);
+        max-height: 500px;
     }
     .panel-header.sticky {
         position: -webkit-sticky;
