@@ -329,6 +329,7 @@ div.tall_group {
     }
     .short_group {
         margin-bottom: 16px;
+        max-width: 34%;
     }
     .item-opts-container {
         color: #000;
