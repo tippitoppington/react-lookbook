@@ -628,7 +628,7 @@ export const outfits = [
         name: 'product name',
         price: '$26.99',
         src: '/img/03/items/item_04/item_04_1.webp',
-        chosen: 'true',
+        chosen: 'false',
       },
       {
         opt: '04_opt_2',

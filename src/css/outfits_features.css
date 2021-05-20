@@ -180,7 +180,7 @@ div.tall_group {
 .item-opts-container {
     max-height: 0px;
     color: #000;
-    background: #eee;
+    background: #fff;
     width: 100%;
     overflow-y: auto;
     z-index: 1;
@@ -191,7 +191,7 @@ div.tall_group {
 .item-opts-container.visible {
     display: flex;
     flex-direction: column;
-    max-height: 800px;
+    max-height: 600px;
     justify-self: flex-start;
     transform: translateY(-400px);
     margin-bottom: -400px;
@@ -202,14 +202,14 @@ div.tall_group {
     position: sticky;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     top: 0;
-    height: 80px;
-    background: #eee;
+    height: 100px;
+    background: #f7f7f7;
     z-index: 0;
-    border-bottom: 1px solid #bfbfbf;
-    margin: 0;
-    padding: 12px 12px 0 12px;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 12px 0;
+    padding: 24px 12px 0 24px;
 }
 
 .item-opt {
@@ -227,8 +227,17 @@ div.tall_group {
 
 .item-opt img {
     max-width: 30%;
-    height: 100%;
-    padding-left: 20px;
+    height: auto;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.item-opt img:hover {
+    border: 1px solid #cecece;
+}
+
+.item-opt img.chosen {
+    border: 1px solid #9a9a9a;
 }
 
 @media screen and (min-width: 800px) {
@@ -333,7 +342,7 @@ div.tall_group {
     }
     .item-opts-container {
         color: #000;
-        background: #eee;
+        background: #fff;
         max-height: 500px;
         max-width: 25%;
         opacity: 0;
@@ -350,17 +359,18 @@ div.tall_group {
         opacity: 1;
         transform: translateX(0);
         max-height: 500px;
+        margin-bottom: 0;
     }
     .panel-header.sticky {
         position: -webkit-sticky;
         position: sticky;
         top: 0;
         height: 60px;
-        background: #eee;
+        background: #f7f7f7;
         z-index: 0;
-        border-bottom: 1px solid #bfbfbf;
-        margin: 0;
-        padding: 0 12px 0 12px;
+        border-bottom: 1px solid #eee;
+        margin: 0 0 12px 0;
+        padding: 0 12px 0 24px;
     }
     /*.short_group img {
         object-fit: cover;

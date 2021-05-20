@@ -10,9 +10,10 @@ const Lookbook = () => {
   const [itemCategory, setItemCategory] = useState('item_01');
   const [open, setOpen] = useState('false');
   const [visible, setVisible] = useState('false');
-
+  const [chosen, setChosen] = useState(0);
   // console.log(`Lookbook.js, outfit[0].style= ${outfit[0].style}`);
-  //here, you are loopping through an array
+
+  //set default item state to option 1
   const [item1, setItem1] = useState(
     outfit[0].item_01.filter((i) => i.opt === '01_opt_1')
   );
@@ -29,41 +30,48 @@ const Lookbook = () => {
     outfit[0].item_05.filter((i) => i.opt === '05_opt_1')
   );
 
+  //reset outfit items to default whenever one of the main look images is clicked
   useEffect(() => {
     setItem1(outfit[0].item_01.filter((i) => i.opt === '01_opt_1'));
+    setChosen(0);
     setItem2(outfit[0].item_02.filter((i) => i.opt === '02_opt_1'));
+    setChosen(0);
     setItem3(outfit[0].item_03.filter((i) => i.opt === '03_opt_1'));
+    setChosen(0);
     setItem4(outfit[0].item_04.filter((i) => i.opt === '04_opt_1'));
+    setChosen(0);
     setItem5(outfit[0].item_05.filter((i) => i.opt === '05_opt_1'));
+    setChosen(0);
   }, [outfit]); // pass `value` as a dependency
 
-  const showItem = (item) => {
+  const showOptions = (item) => {
     setItemCategory(item);
     setOpen('true');
     setVisible('true');
+    setChosen(0);
   };
-  // console.log(
-  //   `Lookbook.js....itemCategory = ${itemCategory}, item2[0].src  =  ${item2[0].src}`
-  // );
-  const handleOption = (itemCategory, itemOpt) => {
-    console.log(
-      `Lookbook.js....itemCategory = ${itemCategory}, itemOpt =${itemOpt}, item2[0].src  =  ${item2[0].src}`
-    );
+
+  const handleOption = (itemCategory, itemOpt, i) => {
     switch (itemCategory) {
       case 'item_01':
         setItem1(outfit[0].item_01.filter((i) => i.opt === itemOpt));
+        setChosen(i);
         break;
       case 'item_02':
         setItem2(outfit[0].item_02.filter((i) => i.opt === itemOpt));
+        setChosen(i);
         break;
       case 'item_03':
         setItem3(outfit[0].item_03.filter((i) => i.opt === itemOpt));
+        setChosen(i);
         break;
       case 'item_04':
         setItem4(outfit[0].item_04.filter((i) => i.opt === itemOpt));
+        setChosen(i);
         break;
       case 'item_05':
         setItem5(outfit[0].item_05.filter((i) => i.opt === itemOpt));
+        setChosen(i);
         break;
       default:
         alert("I don't know such values");
@@ -87,11 +95,12 @@ const Lookbook = () => {
         item3={item3}
         item4={item4}
         item5={item5}
-        showItem={showItem}
+        showOptions={showOptions}
         handleOption={handleOption}
         open={open}
         visible={visible}
         itemCategory={itemCategory}
+        chosen={chosen}
       />
       <LooksImages changeOutfit={changeOutfit} />
     </>

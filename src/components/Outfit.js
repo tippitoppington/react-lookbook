@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ItemOptions from './ItemOptions';
 import ItemList from './ItemList';
 
@@ -12,11 +12,12 @@ const Outfit = ({
   item3,
   item4,
   item5,
-  showItem,
+  showOptions,
   handleOption,
   open,
   visible,
   itemCategory,
+  chosen,
 }) => {
   // console.log(`Outfit.js, itemCategory = ${itemCategory}`);
   // console.log(`Outfit.js, item1[0].src = ${item1[0].src}`);
@@ -43,7 +44,7 @@ const Outfit = ({
 
         <ItemList
           outfit={outfit}
-          showItem={showItem}
+          showOptions={showOptions}
           item1={item1}
           item2={item2}
           item3={item3}
@@ -56,6 +57,7 @@ const Outfit = ({
           itemCategory={itemCategory}
           visible={visible}
           handleOption={handleOption}
+          chosen={chosen}
         />
       </div>
     </>

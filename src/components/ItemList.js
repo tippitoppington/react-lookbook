@@ -4,7 +4,7 @@ import '../css/outfits_features.css';
 
 const ItemList = ({
   outfit,
-  showItem,
+  showOptions,
   item1,
   item2,
   item3,
@@ -25,7 +25,7 @@ const ItemList = ({
               <img
                 src={item1[0].src}
                 alt='an awesome first item'
-                onClick={() => showItem('item_01')}
+                onClick={() => showOptions('item_01')}
               />
               <p>{item1[0].price}</p>
             </div>
@@ -35,7 +35,7 @@ const ItemList = ({
             <img
               src={item2[0].src}
               alt='an awesome second item'
-              onClick={() => showItem('item_02')}
+              onClick={() => showOptions('item_02')}
             />
             <p>{item2[0].price}</p>
           </div>
@@ -47,7 +47,7 @@ const ItemList = ({
               src={item3[0].src}
               alt='an awesome third item'
               className='item'
-              onClick={() => showItem('item_03')}
+              onClick={() => showOptions('item_03')}
             />
             <p>{item3[0].price}</p>
           </div>
@@ -57,7 +57,7 @@ const ItemList = ({
               src={item4[0].src}
               alt='an awesome fourth item'
               className='item'
-              onClick={() => showItem('item_04')}
+              onClick={() => showOptions('item_04')}
             />
             <p>{item4[0].price}</p>
           </div>
@@ -67,7 +67,7 @@ const ItemList = ({
               src={item5[0].src}
               alt='an awesome fifth item'
               className='item'
-              onClick={() => showItem('item_05')}
+              onClick={() => showOptions('item_05')}
             />
             <p>{item5[0].price}</p>
           </div>
