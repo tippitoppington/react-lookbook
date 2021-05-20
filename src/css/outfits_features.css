@@ -212,7 +212,7 @@ div.tall_group {
     padding: 24px 12px 0 24px;
 }
 
-.item-opt {
+div.item-opt {
     display: flex;
     flex-direction: row;
     max-width: 100%;
