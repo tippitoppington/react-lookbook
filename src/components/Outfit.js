@@ -1,26 +1,20 @@
 import React from 'react';
 import ItemOptions from './ItemOptions';
 import ItemList from './ItemList';
-
+import { outfits } from '../data/outfits';
 import '../css/main.css';
 import '../css/outfits_features.css';
 
 const Outfit = ({
-  outfit,
-  item1,
-  item2,
-  item3,
-  item4,
-  item5,
-  showOptions,
+  selectedOutfit,
+  handleCategory,
+  itemCategory,
   handleOption,
   open,
   visible,
-  itemCategory,
-  chosen,
 }) => {
-  // console.log(`Outfit.js, itemCategory = ${itemCategory}`);
-  // console.log(`Outfit.js, item1[0].src = ${item1[0].src}`);
+  let outfit = outfits.filter((o) => o.id === selectedOutfit.id);
+
   return (
     <>
       <div className='look' style={outfit[0].style}>
@@ -43,21 +37,15 @@ const Outfit = ({
         </div>
 
         <ItemList
-          outfit={outfit}
-          showOptions={showOptions}
-          item1={item1}
-          item2={item2}
-          item3={item3}
-          item4={item4}
-          item5={item5}
+          selectedOutfit={selectedOutfit}
+          handleCategory={handleCategory}
           open={open}
         />
         <ItemOptions
-          outfit={outfit}
+          selectedOutfit={selectedOutfit}
           itemCategory={itemCategory}
           visible={visible}
           handleOption={handleOption}
-          chosen={chosen}
         />
       </div>
     </>

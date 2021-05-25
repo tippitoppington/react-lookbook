@@ -1,75 +1,82 @@
 import React from 'react';
+import { outfits } from '../data/outfits';
 import '../css/main.css';
 import '../css/outfits_features.css';
 
-const ItemList = ({
-  outfit,
-  showOptions,
-  item1,
-  item2,
-  item3,
-  item4,
-  item5,
-  open,
-}) => {
-  const o = outfit[0];
+const ItemList = ({ selectedOutfit, handleCategory, open }) => {
+  let outfit = outfits.filter((o) => o.id === selectedOutfit.id);
+  let item_01 = outfit[0].item_01.filter(
+    (o) => o.opt === selectedOutfit.item_01
+  );
+  let item_02 = outfit[0].item_02.filter(
+    (o) => o.opt === selectedOutfit.item_02
+  );
+  let item_03 = outfit[0].item_03.filter(
+    (o) => o.opt === selectedOutfit.item_03
+  );
+  let item_04 = outfit[0].item_04.filter(
+    (o) => o.opt === selectedOutfit.item_04
+  );
+  let item_05 = outfit[0].item_05.filter(
+    (o) => o.opt === selectedOutfit.item_05
+  );
 
   return (
     <>
       <div
         className={open === 'true' ? 'item_list open' : 'item_list'}
-        style={o.style}>
+        style={outfit.style}>
         <div className='tall_group'>
           {
             <div className='item'>
               <img
-                src={item1[0].src}
+                src={item_01[0].src}
                 alt='an awesome first item'
-                onClick={() => showOptions('item_01')}
+                onClick={() => handleCategory('item_01')}
               />
-              <p>{item1[0].price}</p>
+              <p>{item_01[0].price}</p>
             </div>
           }
 
           <div className='item'>
             <img
-              src={item2[0].src}
+              src={item_02[0].src}
               alt='an awesome second item'
-              onClick={() => showOptions('item_02')}
+              onClick={() => handleCategory('item_02')}
             />
-            <p>{item2[0].price}</p>
+            <p>{item_02[0].price}</p>
           </div>
         </div>
 
         <div className='short_group'>
           <div className='item'>
             <img
-              src={item3[0].src}
+              src={item_03[0].src}
               alt='an awesome third item'
               className='item'
-              onClick={() => showOptions('item_03')}
+              onClick={() => handleCategory('item_03')}
             />
-            <p>{item3[0].price}</p>
+            <p>{item_03[0].price}</p>
           </div>
 
           <div className='item'>
             <img
-              src={item4[0].src}
+              src={item_04[0].src}
               alt='an awesome fourth item'
               className='item'
-              onClick={() => showOptions('item_04')}
+              onClick={() => handleCategory('item_04')}
             />
-            <p>{item4[0].price}</p>
+            <p>{item_04[0].price}</p>
           </div>
 
           <div className='item'>
             <img
-              src={item5[0].src}
+              src={item_05[0].src}
               alt='an awesome fifth item'
               className='item'
-              onClick={() => showOptions('item_05')}
+              onClick={() => handleCategory('item_05')}
             />
-            <p>{item5[0].price}</p>
+            <p>{item_05[0].price}</p>
           </div>
         </div>
       </div>

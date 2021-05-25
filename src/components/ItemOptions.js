@@ -1,17 +1,19 @@
 import React from 'react';
 import '../css/main.css';
 import '../css/outfits_features.css';
+import { outfits } from '../data/outfits';
 
 const ItemOptions = ({
-  outfit,
+  selectedOutfit,
   itemCategory,
   handleOption,
   visible,
-  chosen,
 }) => {
-  const itemCat = outfit[0][itemCategory];
-  console.log(chosen);
-  //handleOptions function on item category that updates the item list array with chosen item option, by looping through all item options, setting chosen to false and just true on the clicked item.
+  const outfit = outfits.filter((o) => o.id === selectedOutfit.id);
+  let itemCatOpts = outfit[0][itemCategory];
+
+  //handleOptions function updates the selectedOutfit array with the clicked item option, and adds an active state to the selected option.
+
   //i in itemOpts is the item #
   return (
     <>
@@ -24,13 +26,15 @@ const ItemOptions = ({
         <div className='panel-header sticky'>
           <h4>Change item</h4>
         </div>
-        {itemCat.map((opt, i) => (
+        {itemCatOpts.map((opt, i) => (
           <div className='item-opt ' key={i}>
             <img
-              className={i === chosen ? 'item-opt chosen ' : 'item-opt '}
+              className='item-opt'
               src={opt.src}
               alt='an alternate item'
-              onClick={(e) => handleOption(itemCategory, opt.opt, i)}
+              onClick={(e) =>
+                handleOption(selectedOutfit.id, itemCategory, opt.opt)
+              }
             />
             <div className='item-info'>
               <p>Hello</p>

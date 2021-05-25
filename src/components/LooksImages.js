@@ -1,7 +1,7 @@
 import React from 'react';
 import { outfits } from '../data/outfits';
 
-const LooksImages = ({ changeOutfit }) => {
+const LooksImages = ({ setOutfitId }) => {
   return (
     <>
       <div className='grid-container'>
@@ -9,7 +9,7 @@ const LooksImages = ({ changeOutfit }) => {
           <button
             key={key}
             className='look-img-trigger'
-            onClick={() => changeOutfit(outfit.id)}>
+            onClick={() => setOutfitId(outfit.id)}>
             <figure>
               <img src={outfit.outfit_img} alt='an awesome look' />
             </figure>
