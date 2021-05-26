@@ -11,6 +11,9 @@ const ItemOptions = ({
 }) => {
   const outfit = outfits.filter((o) => o.id === selectedOutfit.id);
   let itemCatOpts = outfit[0][itemCategory];
+  // const [chosen, setChosen] = useState('01_opt_1');
+  let chosen = selectedOutfit[itemCategory];
+  console.log(selectedOutfit[itemCategory]);
 
   //handleOptions function updates the selectedOutfit array with the clicked item option, and adds an active state to the selected option.
 
@@ -29,7 +32,7 @@ const ItemOptions = ({
         {itemCatOpts.map((opt, i) => (
           <div className='item-opt ' key={i}>
             <img
-              className='item-opt'
+              className={opt.opt === chosen ? 'item-opt chosen' : 'item-opt'}
               src={opt.src}
               alt='an alternate item'
               onClick={(e) =>

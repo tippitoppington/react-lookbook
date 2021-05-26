@@ -48,7 +48,7 @@ const Lookbook = () => {
   const [open, setOpen] = useState('false');
   const [visible, setVisible] = useState('false');
   const [itemCategory, setItemCategory] = useState('item_01');
-  const [chosen, setChosen] = useState('01_opt_1');
+
   //04 Use Effect changes the value of the outfit array that is passed to the Outfit component whenever outfitId is changed.
   useEffect(() => {
     switch (outfitId) {
@@ -84,23 +84,19 @@ const Lookbook = () => {
     switch (id) {
       case '01':
         setOutfit1({ ...outfit1, [cat]: opt });
-        setChosen(opt);
-        console.log(outfit1, chosen);
+
         break;
       case '02':
         setOutfit2({ ...outfit2, [cat]: opt });
-        setChosen(opt);
-        console.log(outfit2, chosen);
+
         break;
       case '03':
         setOutfit3({ ...outfit3, [cat]: opt });
-        setChosen(opt);
-        console.log(outfit3, chosen);
+
         break;
       case '04':
         setOutfit4({ ...outfit4, [cat]: opt });
-        setChosen(opt);
-        console.log(outfit4, chosen);
+
         break;
 
       default:
