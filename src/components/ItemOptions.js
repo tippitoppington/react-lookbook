@@ -21,6 +21,14 @@ const ItemOptions = ({
   return (
     <>
       <div
+        style={{
+          backgroundImage: 'url(/img/up-down.svg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '5%',
+
+          backgroundPosition: '90% 60%',
+          backgroundOffset: '20px',
+        }}
         className={
           visible === 'true'
             ? 'item-opts-container visible'
