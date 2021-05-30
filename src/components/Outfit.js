@@ -12,6 +12,7 @@ const Outfit = ({
   handleOption,
   open,
   visible,
+  resetOutfit,
 }) => {
   let outfit = outfits.filter((o) => o.id === selectedOutfit.id);
 
@@ -27,6 +28,9 @@ const Outfit = ({
               <li>Make it your own</li>
             </ul>
           </div>
+          <button class='reset' onClick={resetOutfit(outfit[0].id)}>
+            Reset
+          </button>
         </div>
         <div className='outfit-img-container'>
           <img

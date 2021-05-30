@@ -5,41 +5,29 @@ import LooksImages from '../components/LooksImages';
 const Lookbook = () => {
   //01 Create default array of objects for each of the outfits useState hooks
   //02 Set the items 1-5 to default values
-  const [outfit1, setOutfit1] = useState({
-    id: '01',
+  const initialState = {
     item_01: '01_opt_1',
     item_02: '02_opt_1',
     item_03: '03_opt_1',
     item_04: '04_opt_1',
     item_05: '05_opt_1',
-    // visible: 'true',
+  };
+
+  const [outfit1, setOutfit1] = useState({
+    ...initialState,
+    id: '01',
   });
   const [outfit2, setOutfit2] = useState({
+    ...initialState,
     id: '02',
-    item_01: '01_opt_1',
-    item_02: '02_opt_1',
-    item_03: '03_opt_1',
-    item_04: '04_opt_1',
-    item_05: '05_opt_1',
-    // visible: 'false',
   });
   const [outfit3, setOutfit3] = useState({
+    ...initialState,
     id: '03',
-    item_01: '01_opt_1',
-    item_02: '02_opt_1',
-    item_03: '03_opt_1',
-    item_04: '04_opt_1',
-    item_05: '05_opt_1',
-    // visible: 'false',
   });
   const [outfit4, setOutfit4] = useState({
+    ...initialState,
     id: '04',
-    item_01: '01_opt_1',
-    item_02: '02_opt_1',
-    item_03: '03_opt_1',
-    item_04: '04_opt_1',
-    item_05: '05_opt_1',
-    // visible: 'false',
   });
 
   //03 Looks images set the id for which outfit to load and populate the list component, defaults to 01
@@ -104,6 +92,10 @@ const Lookbook = () => {
     }
   };
 
+  const resetOutfit = (id) => {
+    console.log(id);
+  };
+
   // console.log(`Lookbook.js, item1[0].src = ${item1[0].src}`);
   return (
     <>
@@ -117,6 +109,7 @@ const Lookbook = () => {
         handleCategory={handleCategory}
         handleOption={handleOption}
         itemCategory={itemCategory}
+        resetOutfit={resetOutfit}
       />
       <LooksImages setOutfitId={setOutfitId} />
     </>
