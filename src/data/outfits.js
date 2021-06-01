@@ -4,6 +4,10 @@ export const outfits = [
     outfit_img: '/img/01/outfit_01f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
+    title: 'Details, details',
+    text1: 'Create a crisp white backdrop to showcase your style.',
+    text2: 'Mix flashy statement pieces with casual items.',
+    text3: 'Dress down with flat sandals, a tank top and a large tote.',
     item_01: [
       {
         opt: '01_opt_1',
@@ -245,7 +249,10 @@ export const outfits = [
     outfit_img: '/img/02/outfit_02f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
-
+    title: 'Classic with an Attitude',
+    text1: 'Start with a classic blazer, distressed jeans and oxfords.',
+    text2: 'Keep the minimalism going with simple accessories.',
+    text3: 'Up the romance factor with a flirty little top.',
     item_01: [
       {
         opt: '01_opt_1',
@@ -487,7 +494,10 @@ export const outfits = [
     outfit_img: '/img/03/outfit_03f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
-
+    title: 'Black and White',
+    text1: 'Pair an oversize black blazer with a skinny bottom.',
+    text2: 'Up the glam factor with leather pants and studded accessories.',
+    text3: 'Trade the sneakers for lace-up shoes for an eclectic look.',
     item_01: [
       {
         opt: '01_opt_1',
@@ -720,6 +730,10 @@ export const outfits = [
     outfit_img: '/img/04/outfit_04f.webp',
     item_count: 5,
     style: { backgroundColor: '#ffffff' },
+    title: 'Edgy or Artsy?',
+    text1: 'Pair a basic white top with a baggy pair of cargo pants.',
+    text2: 'Grab a statement bag and combat boots.',
+    text3: 'Go rogue with some intense colors or a graphic tee.',
     item_01: [
       {
         opt: '01_opt_1',

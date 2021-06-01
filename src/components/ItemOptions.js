@@ -13,7 +13,7 @@ const ItemOptions = ({
   let itemCatOpts = outfit[0][itemCategory];
   // const [chosen, setChosen] = useState('01_opt_1');
   let chosen = selectedOutfit[itemCategory];
-  console.log(selectedOutfit[itemCategory]);
+  // console.log(selectedOutfit[itemCategory]);
 
   //handleOptions function updates the selectedOutfit array with the clicked item option, and adds an active state to the selected option.
 

@@ -76,6 +76,19 @@ div.look {
 
 .look-description li {
     padding: 0 0 10px 0;
+    line-height: 2.35rem;
+}
+
+button.resetHidden {
+    display: none;
+}
+
+button.resetVisible {
+    text-align: left;
+    display: block;
+    cursor: pointer;
+    color: #666;
+    text-decoration: underline;
 }
 
 .outfit-img-container {

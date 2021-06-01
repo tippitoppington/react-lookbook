@@ -12,25 +12,30 @@ const Outfit = ({
   handleOption,
   open,
   visible,
-  resetOutfit,
+  handleReset,
+  reset01,
 }) => {
   let outfit = outfits.filter((o) => o.id === selectedOutfit.id);
+  let reset = selectedOutfit.reset;
+  console.log(reset);
 
   return (
     <>
       <div className='look' style={outfit[0].style}>
         <div className='desc-container'>
           <div className='look-description'>
-            <h4>Style Name</h4>
+            <h4>{outfit[0].title}</h4>
             <ul>
-              <li>What makes it work</li>
-              <li>Key elements</li>
-              <li>Make it your own</li>
+              <li>{outfit[0].text1}</li>
+              <li>{outfit[0].text2}</li>
+              <li>{outfit[0].text3}</li>
             </ul>
+            <button
+              className={reset === 'true' ? 'resetVisible' : 'resetHidden'}
+              onClick={(e) => handleReset(selectedOutfit.id)}>
+              Reset
+            </button>
           </div>
-          <button class='reset' onClick={resetOutfit(outfit[0].id)}>
-            Reset
-          </button>
         </div>
         <div className='outfit-img-container'>
           <img

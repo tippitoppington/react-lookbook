@@ -11,23 +11,24 @@ const Lookbook = () => {
     item_03: '03_opt_1',
     item_04: '04_opt_1',
     item_05: '05_opt_1',
+    reset: 'false',
   };
 
   const [outfit1, setOutfit1] = useState({
-    ...initialState,
     id: '01',
+    ...initialState,
   });
   const [outfit2, setOutfit2] = useState({
-    ...initialState,
     id: '02',
+    ...initialState,
   });
   const [outfit3, setOutfit3] = useState({
-    ...initialState,
     id: '03',
+    ...initialState,
   });
   const [outfit4, setOutfit4] = useState({
-    ...initialState,
     id: '04',
+    ...initialState,
   });
 
   //03 Looks images set the id for which outfit to load and populate the list component, defaults to 01
@@ -71,19 +72,19 @@ const Lookbook = () => {
   const handleOption = (id, cat, opt) => {
     switch (id) {
       case '01':
-        setOutfit1({ ...outfit1, [cat]: opt });
+        setOutfit1({ ...outfit1, [cat]: opt, reset: 'true' });
 
         break;
       case '02':
-        setOutfit2({ ...outfit2, [cat]: opt });
+        setOutfit2({ ...outfit2, [cat]: opt, reset: 'true' });
 
         break;
       case '03':
-        setOutfit3({ ...outfit3, [cat]: opt });
+        setOutfit3({ ...outfit3, [cat]: opt, reset: 'true' });
 
         break;
       case '04':
-        setOutfit4({ ...outfit4, [cat]: opt });
+        setOutfit4({ ...outfit4, [cat]: opt, reset: 'true' });
 
         break;
 
@@ -92,11 +93,27 @@ const Lookbook = () => {
     }
   };
 
-  const resetOutfit = (id) => {
-    console.log(id);
+  const handleReset = (id) => {
+    switch (id) {
+      case '01':
+        setOutfit1({ id: '01', ...initialState, reset: 'false' });
+        break;
+      case '02':
+        setOutfit2({ id: '02', ...initialState, reset: 'false' });
+        break;
+      case '03':
+        setOutfit3({ id: '03', ...initialState, reset: 'false' });
+        break;
+      case '04':
+        setOutfit4({ id: '04', ...initialState, reset: 'false' });
+        break;
+
+      default:
+        alert("I don't know such values");
+    }
+    console.log(selectedOutfit);
   };
 
-  // console.log(`Lookbook.js, item1[0].src = ${item1[0].src}`);
   return (
     <>
       <div className='section-header'>
@@ -109,7 +126,7 @@ const Lookbook = () => {
         handleCategory={handleCategory}
         handleOption={handleOption}
         itemCategory={itemCategory}
-        resetOutfit={resetOutfit}
+        handleReset={handleReset}
       />
       <LooksImages setOutfitId={setOutfitId} />
     </>
