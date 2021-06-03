@@ -101,6 +101,24 @@ button.resetVisible {
     max-height: 1000px;
 }
 
+.tooltip {
+    font-size: 1.25rem;
+    position: absolute;
+    padding: 20px;
+    width: 90%;
+    top: 10px;
+    z-index: 20;
+    background: rgba(95, 133, 147, 0.2);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.tooltip.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
 .item_list {
     cursor: pointer;
     display: flex;
@@ -313,6 +331,23 @@ div.item-opt {
         max-height: 100%;
         width: auto;
     }
+    .tooltip {
+        font-size: 0.875rem;
+        position: absolute;
+        padding: 10px;
+        width: 100%;
+        top: 10px;
+        z-index: 20;
+        left: 40px;
+        background: rgba(95, 133, 147, 0.2);
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear 300ms, opacity 300ms;
+    }
+    .tooltip.hide {
+        visibility: hidden;
+        opacity: 0;
+    }
     div.item_list {
         position: relative;
         display: flex;
@@ -392,9 +427,6 @@ div.item-opt {
         transform: translateX(0);
         max-height: 500px;
         margin-bottom: 0;
-    }
-    .item-opt img:hover {
-        border: 1px solid #cecece;
     }
     .panel-header.sticky {
         position: -webkit-sticky;

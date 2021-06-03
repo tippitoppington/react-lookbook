@@ -17,6 +17,7 @@
         "react-router-dom": "5.2.0",
         "react-scripts": "4.0.3",
         "react-scrollmagic": "2.3.0",
+        "react-tooltip": "4.2.21",
         "scrollmagic": "2.0.8",
         "web-vitals": "1.1.1"
     },

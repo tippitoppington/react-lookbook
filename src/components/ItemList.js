@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { outfits } from '../data/outfits';
 import '../css/main.css';
 import '../css/outfits_features.css';
@@ -26,6 +27,9 @@ const ItemList = ({ selectedOutfit, handleCategory, open }) => {
       <div
         className={open === 'true' ? 'item_list open' : 'item_list'}
         style={outfit.style}>
+        <button className='tooltip'>
+          Select an item to personalize this look.
+        </button>
         <div className='tall_group'>
           {
             <div className='item'>

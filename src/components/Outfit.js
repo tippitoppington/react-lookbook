@@ -1,5 +1,6 @@
 import React from 'react';
 import ItemOptions from './ItemOptions';
+
 import ItemList from './ItemList';
 import { outfits } from '../data/outfits';
 import '../css/main.css';
@@ -17,11 +18,14 @@ const Outfit = ({
 }) => {
   let outfit = outfits.filter((o) => o.id === selectedOutfit.id);
   let reset = selectedOutfit.reset;
-  console.log(reset);
+  const hideTooltip = () => {
+    let tooltip = document.querySelector('.tooltip');
+    tooltip.classList.add('hide');
+  };
 
   return (
     <>
-      <div className='look' style={outfit[0].style}>
+      <div className='look' style={outfit[0].style} onClick={hideTooltip}>
         <div className='desc-container'>
           <div className='look-description'>
             <h4>{outfit[0].title}</h4>

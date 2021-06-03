@@ -111,7 +111,6 @@ const Lookbook = () => {
       default:
         alert("I don't know such values");
     }
-    console.log(selectedOutfit);
   };
 
   return (
