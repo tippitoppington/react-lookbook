@@ -12,7 +12,7 @@ export const inspo = [
         price: '',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-1.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-1.jpg'],
         cta: 'Shop Beach Essentials',
       },
       {
@@ -22,7 +22,7 @@ export const inspo = [
         price: '$148.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-2.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-2.jpg'],
       },
       {
         pid: 't1-3',
@@ -31,7 +31,7 @@ export const inspo = [
         price: '',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-3.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-3.jpg'],
         social: 'true',
       },
       {
@@ -41,7 +41,7 @@ export const inspo = [
         price: '$30.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-4.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-4.jpg'],
       },
       {
         pid: 't1-5',
@@ -50,7 +50,7 @@ export const inspo = [
         price: '$100.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-5.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-5.jpg'],
       },
       {
         pid: 't1-6',
@@ -60,7 +60,7 @@ export const inspo = [
         price: '$58.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-6.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-6.jpg'],
       },
       {
         pid: 't1-7',
@@ -69,7 +69,7 @@ export const inspo = [
         price: '$24.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-7.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-7.jpg'],
       },
 
       {
@@ -80,9 +80,9 @@ export const inspo = [
         saleprice: '',
         ofTrend: ['t1'],
         image: [
-          '/img/inspo/t1-GoCoastal/t1-8-1.webp',
-          '/img/inspo/t1-GoCoastal/t1-8-2.webp',
-          '/img/inspo/t1-GoCoastal/t1-8-3.webp',
+          '/img/inspo/t1-GoCoastal/t1-8-1.jpg',
+          '/img/inspo/t1-GoCoastal/t1-8-2.jpg',
+          '/img/inspo/t1-GoCoastal/t1-8-3.jpg',
         ],
       },
       {
@@ -92,7 +92,7 @@ export const inspo = [
         price: '',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-9.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-9.jpg'],
         social: 'true',
       },
       {
@@ -103,11 +103,11 @@ export const inspo = [
         saleprice: '',
         ofTrend: ['t1'],
         image: [
-          '/img/inspo/t1-GoCoastal/t1-10-1.webp',
-          '/img/inspo/t1-GoCoastal/t1-10-2.webp',
-          '/img/inspo/t1-GoCoastal/t1-10-3.webp',
-          '/img/inspo/t1-GoCoastal/t1-10-4.webp',
-          '/img/inspo/t1-GoCoastal/t1-10-5.webp',
+          '/img/inspo/t1-GoCoastal/t1-10-1.jpg',
+          '/img/inspo/t1-GoCoastal/t1-10-2.jpg',
+          '/img/inspo/t1-GoCoastal/t1-10-3.jpg',
+          '/img/inspo/t1-GoCoastal/t1-10-4.jpg',
+          '/img/inspo/t1-GoCoastal/t1-10-5.jpg',
         ],
       },
       {
@@ -118,7 +118,7 @@ export const inspo = [
         price: '$46.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-11.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-11.jpg'],
       },
       {
         pid: 't1-12',
@@ -127,7 +127,7 @@ export const inspo = [
         price: '$46.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-12.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-12.jpg'],
       },
       {
         pid: 't1-13',
@@ -136,7 +136,7 @@ export const inspo = [
         price: '$16.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-13.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-13.jpg'],
       },
       {
         pid: 't1-14',
@@ -145,7 +145,7 @@ export const inspo = [
         price: '',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-14.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-14.jpg'],
         social: 'true',
       },
       {
@@ -155,7 +155,7 @@ export const inspo = [
         price: '$12.00',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-15.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-15.jpg'],
       },
       {
         pid: 't1-16',
@@ -164,7 +164,7 @@ export const inspo = [
         price: '',
         saleprice: '',
         ofTrend: ['t1'],
-        image: ['/img/inspo/t1-GoCoastal/t1-16.webp'],
+        image: ['/img/inspo/t1-GoCoastal/t1-16.jpg'],
         social: 'true',
       },
     ],
