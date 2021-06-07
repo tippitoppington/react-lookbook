@@ -1,7 +1,6 @@
 import React from 'react';
-import '../css/main.css';
-import '../css/outfits_features.css';
-import { outfits } from '../data/outfits';
+
+import { outfits } from '../data/outfits-data';
 
 const ItemOptions = ({
   selectedOutfit,
@@ -42,6 +41,8 @@ const ItemOptions = ({
             <img
               className={opt.opt === chosen ? 'item-opt chosen' : 'item-opt'}
               src={opt.src}
+              loading='lazy'
+              decoding='async'
               alt='an alternate item'
               onClick={(e) =>
                 handleOption(selectedOutfit.id, itemCategory, opt.opt)

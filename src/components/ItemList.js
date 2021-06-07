@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { outfits } from '../data/outfits';
-import '../css/main.css';
-import '../css/outfits_features.css';
+import { outfits } from '../data/outfits-data';
 
 const ItemList = ({ selectedOutfit, handleCategory, open }) => {
   let outfit = outfits.filter((o) => o.id === selectedOutfit.id);
@@ -76,6 +74,8 @@ const ItemList = ({ selectedOutfit, handleCategory, open }) => {
           <div className='item'>
             <img
               src={item_05[0].src}
+              loading='lazy'
+              decoding='async'
               alt='an awesome fifth item'
               className='item'
               onClick={() => handleCategory('item_05')}

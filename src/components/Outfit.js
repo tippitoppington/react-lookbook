@@ -2,8 +2,8 @@ import React from 'react';
 import ItemOptions from './ItemOptions';
 
 import ItemList from './ItemList';
-import { outfits } from '../data/outfits';
-import '../css/main.css';
+import { outfits } from '../data/outfits-data';
+
 import '../css/outfits_features.css';
 
 const Outfit = ({

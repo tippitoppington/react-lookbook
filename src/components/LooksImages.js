@@ -1,5 +1,5 @@
 import React from 'react';
-import { outfits } from '../data/outfits';
+import { outfits } from '../data/outfits-data';
 
 const LooksImages = ({ setOutfitId }) => {
   return (
@@ -11,7 +11,12 @@ const LooksImages = ({ setOutfitId }) => {
             className='look-img-trigger'
             onClick={() => setOutfitId(outfit.id)}>
             <figure>
-              <img src={outfit.outfit_img} alt='an awesome look' />
+              <img
+                src={outfit.outfit_img}
+                alt='an awesome look'
+                loading='lazy'
+                decoding='async'
+              />
             </figure>
           </button>
         ))}
